@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f1f2;
+    font-family: Raleway;
+}
+
+.layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Optional: */
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    background-color: #7A9E7E;
+    height: 8vh;
+    padding: 0 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #e8f1f2;
+    text-decoration: none;
+}
+
+header span{
+    font-family: "Playfair Display";
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+header nav{
+    display: flex;
+    gap: 5vw;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100vw;
+    background-color: #7A9E7E;
+}
+
+footer p {
+    color: #001A23;
+}
+
+.content-section {
+    padding: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Home Page*/
+
+#home-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./src/Assets/Images/scott-webb-1ddol8rgUH8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 87vh;
+}
+
+
+#home-card {
+    color: #E8F1F2;
+    width: 40%;
+    margin-left: 10vw;
+    padding: 30px 30px;
+    background-color: #7A9E7E;
+    border-radius: 10px 100px 10px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#home-card h1 {
+    margin: 0;
+    padding: 0;
+    color: #001A23;
+}
+
+#link-span{
+    line-height: 3rem;
+    text-wrap: nowrap;
+}
+
+#home-card a{
+    background-color: #31493C;
+    padding: 10px;
+    color: #E8F1F2;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*Rent page*/
+
+.prop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.prop-thumb{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#rent-header {
+    padding-left: 20px;
+    color: #7A9E7E;
+    text-decoration: underline;
+}
+
+
+
