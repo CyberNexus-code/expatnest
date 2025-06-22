@@ -5,9 +5,9 @@ export default function DashboardLayout(){
     return (
         <>
             <nav className="lease-nav">
-                <NavLink to="/dashboard">Dashboard</NavLink>
-                <NavLink to="/dashboard/income">Income</NavLink>
-                <NavLink to="/dashboard/properties">Properties</NavLink>
+                <NavLink to="/dashboard" end className={({isActive}) => isActive ? "lease-active-link" : "lease-inactive-link"}>Dashboard</NavLink>
+                <NavLink to="/dashboard/income" className={({isActive}) => isActive ? "lease-active-link" : "lease-inactive-link"}> Income</NavLink>
+                <NavLink to="/dashboard/properties" className={({isActive}) => isActive ? "lease-active-link" : "lease-inactive-link"}>Properties</NavLink>
             </nav>
             <Outlet />
         </>

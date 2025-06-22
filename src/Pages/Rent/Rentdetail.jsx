@@ -18,10 +18,11 @@ export default function Rentdetails(){
     {
         bgImageStyle = {
         backgroundImage: `url(".${property.images[0]}")`,
-        backgroundSize: "contain",
+        backgroundSize: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "300px"};
+        height: "300px",
+        width: "400px"};
     }
 
     return property == null ? 
