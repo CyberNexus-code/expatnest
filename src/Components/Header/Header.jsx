@@ -6,6 +6,7 @@ export default function Header(){
         <header>
             <NavLink to="/"><h1><span>Expat</span>nest</h1></NavLink>
             <nav>
+                <NavLink to="/dashboard">Lease</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/rent">Rent</NavLink>
             </nav>

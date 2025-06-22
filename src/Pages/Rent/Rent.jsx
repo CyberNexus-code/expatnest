@@ -14,14 +14,16 @@ export default function Rent(){
 
     const renderPoperties = properties.map(p => (
         <div key={p.id} className="property-card">
-            <img className="prop-thumb" src={p.images[0]}/>
-            <h3>{p.title}</h3>
-            <div className="prop-details">
-                <p>{p.address.city}</p>
-                <p>{p.address.province}</p>
-                <p>{p.bedrooms}</p>
-                <p>€ {p.rent}</p>
-            </div>
+            <NavLink to={`/rent/${p.id}`}>
+                <img className="prop-thumb" src={p.images[0]}/>
+                <h3>{p.title}</h3>
+                <div className="prop-details">
+                    <p>{p.address.city}</p>
+                    <p>{p.address.province}</p>
+                    <p>{p.bedrooms}</p>
+                    <p>€ {p.rent}</p>
+                </div>
+            </NavLink>
         </div>
     ))
 
