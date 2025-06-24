@@ -17,11 +17,14 @@ export default function Rent(){
             <NavLink to={`/rent/${p.id}`}>
                 <img className="prop-thumb" src={p.images[0]}/>
                 <h3>{p.title}</h3>
-                <div className="prop-details">
-                    <p>{p.address.city}</p>
-                    <p>{p.address.province}</p>
-                    <p>{p.bedrooms}</p>
-                    <p>€ {p.rent}</p>
+                <div className="prop-details-container">
+                    <div className="prop-details">
+                        <p>City: {p.address.city}</p>
+                        <p>Province: {p.address.province}</p>
+                        <p>Bedrooms: {p.bedrooms}</p>
+                        <p>Rent: € {p.rent}</p>
+                    </div>
+                    <NavLink to={`/rent/${p.id}`}>Contact</NavLink>
                 </div>
             </NavLink>
         </div>

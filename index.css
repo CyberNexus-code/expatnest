@@ -114,6 +114,11 @@ footer p {
     margin: 0;
     padding: 0;
     color: #001A23;
+    font-size: 2vw;
+}
+
+#home-card p{
+    font-size: 0.85vw;
 }
 
 #link-span{
@@ -133,14 +138,14 @@ footer p {
 
 .prop-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
 }
 
 .prop-thumb{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 #rent-header {
@@ -148,6 +153,45 @@ footer p {
     color: #7A9E7E;
     text-decoration: underline;
 }
+
+.property-card {
+    border-radius: 5px;
+    box-shadow: #001A23 0px 0px 10px;
+    max-width: 25vw;
+}
+
+.property-card a{
+    text-decoration: none;
+    color: #001A23;
+}
+
+.property-card h3{
+    padding-left: 10px;
+    font-size: 1.5vw;
+}
+
+.prop-details-container{
+    padding: 0vh 1vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+    align-self: flex-end;
+}
+
+.prop-details {
+    font-size: 1vw;
+}
+
+#back-btn {
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #31493C;
+    max-width: max-content;
+    color: #E8F1F2;
+}
+/*Lease*/
 
 .lease-nav {
     display: flex;
@@ -172,3 +216,42 @@ footer p {
     background-color: #7A9E7E;
 }
 
+@media screen and (max-width: 1200px) {
+
+    #home-card p{
+    font-size: 1.3vw;
+    }
+    
+    .prop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    }
+
+    .property-card {
+    border-radius: 5px;
+    box-shadow: #001A23 0px 0px 10px;
+    max-width: 33vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #home-card p{
+    font-size: 2vw;
+    }
+    
+    .prop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    }
+
+    .property-card {
+    border-radius: 5px;
+    box-shadow: #001A23 0px 0px 10px;
+    max-width: 50vw;
+    }
+}

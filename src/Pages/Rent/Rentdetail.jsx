@@ -37,7 +37,7 @@ export default function Rentdetails(){
         <>
             <NavLink id="back-btn" to="/rent">...Back</NavLink>
             <section className="content-section">
-                <div className="property-card">
+                <div className="property-content">
                     <div id="property-details-images" style={bgImageStyle}></div>
                     <div>
                         <h2>{property.title}</h2>
