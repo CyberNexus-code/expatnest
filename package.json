@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
     "miragejs": "^0.1.48",
     "vite": "^6.3.5"
   },
